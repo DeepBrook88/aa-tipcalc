@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".MainActivity">
+    <TextView
+            android:text="@string/tipcalc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textTipcalcTitle"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:textSize="48sp" android:layout_marginTop="10dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editTipInput"
+            app:layout_constraintStart_toStartOf="parent"
+            android:hint="@string/tip_amount_box"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497" app:layout_constraintTop_toBottomOf="@+id/textTipcalcTitle"
+            android:layout_marginTop="40dp"/>
+    <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editPercentInput"
+            android:hint="@string/percent_box" android:text="10" tools:text="10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTipInput" android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"/>
+    <Button
+            android:text="@string/tipcalc_calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/tipcalc_calculate"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497" app:layout_constraintTop_toBottomOf="@+id/textTipCalcResult"
+            android:layout_marginTop="40dp"/>
+    <TextView
+            android:text="@string/tipcalc_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTipCalcResult"
+            app:layout_constraintTop_toBottomOf="@+id/editPercentInput" android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
