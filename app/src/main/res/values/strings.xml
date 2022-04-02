@@ -1,11 +1,7 @@
 <resources>
     <string name="app_name">TipCalculator</string>
-    <string name="enter_your_name">enter your name</string>
-    <string name="done">Done</string>
-    <string name="nothing_entered_yet">nothing entered yet</string>
-    <string name="hello">Hello %s!</string>
-    <string name="percent_box">percent</string>
-    <string name="tip_amount_box">tip</string>
+    <string name="percent_box">Tip percent</string>
+    <string name="tip_amount_box">Tip amount</string>
     <string name="tipcalc_title">Tip Calculator</string>
     <string name="tipcalc_result"> </string>
     <string name="tipcalc_calculate">Calculate total</string>
